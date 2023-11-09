@@ -1,0 +1,12 @@
+h1 {
+    font-size: 60px;
+    width: 70dvw;
+    background: linear-gradient(100deg, $pink, $red, $orange, $yellow, $lightGreen, $green, $blue, $purple);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.landing {
+    grid-column: breakout;
+    height: 100dvh;
+}

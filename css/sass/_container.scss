@@ -1,0 +1,8 @@
+.container {
+    margin-block: 10px;
+    padding: $inset-padding;
+
+    & > *:not(:last-child) {
+        margin-bottom: $margin-between-elements;
+    }
+}

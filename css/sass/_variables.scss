@@ -1,0 +1,21 @@
+// COLORS
+$pink: #f7c2e6;
+$red: #f4c2d0;
+$orange: #f7d5c2;
+$yellow: #f7f2c2;
+$lightGreen: #d0f7c2;
+$green: #b3e6d0;
+$blue: #b3c2f7;
+$purple: #d0b3f7;
+
+// CONTAINER LAYOUT
+$baseGap: 5dvw;
+$baseBreakout: 10dvw;
+$baseContent: $baseGap + $baseBreakout;
+$gap: max(20px, $baseGap);
+$breakout: calc($baseGap + $baseBreakout - $gap);
+$content: min(70dvw, 100% - $gap * 2 - $breakout * 2);
+
+// CONTAINER
+$inset-padding: 20px;
+$margin-between-elements: 10px;

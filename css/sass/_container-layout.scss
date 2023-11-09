@@ -1,0 +1,31 @@
+.main-container {
+    display: grid;
+    grid-template-columns:
+        [full-width-start] $gap [breakout-start] $breakout [content-start] $content [content-end] $breakout [breakout-end] $gap [full-width-end];
+}
+
+.main-container > * {
+    grid-column: content;
+}
+
+.main-container > .full-width {
+    grid-column: full-width;
+    padding-inline: $baseContent;
+
+    &.break {
+        padding-inline: $gap;
+    }
+
+    &.full {
+        padding-inline: $inset-padding;
+    }
+}
+
+.main-container > .breakout {
+    grid-column: breakout;
+    padding-inline: $baseBreakout;
+
+    &.full {
+        padding-inline: $inset-padding;
+    }
+}
